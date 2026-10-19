@@ -1,0 +1,24 @@
+{
+  "name": "dsh-facts",
+  "version": "0.1.0",
+  "description": "dsh 时间感知记忆：用 SQLite 存带时间戳的事实，set 自动失效旧值，按时间过滤查询，注册为工具供 agent 主动读写，并把当前有效事实注入未来会话上下文",
+  "type": "module",
+  "main": "lib/index.js",
+  "author": "佐罗斯 (Zok66)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zok66/dsh-facts"
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "0.2.0-rc.2"
+  },
+  "license": "MIT"
+}
